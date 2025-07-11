@@ -1,4 +1,4 @@
-# Librería Validador de Datos 
+<img width="853" height="300" alt="image" src="https://github.com/user-attachments/assets/4810dea2-3586-4eb1-ab88-6a76ab94013b" /># Librería Validador de Datos 
 ## Equipo 11
 ### Descripción General
 
@@ -119,7 +119,8 @@ lblDescripcion.setText("Descripción: " + (Validador.noEsNuloNiVacio(descripcion
    boolean valido = Validador.esCorreoValido("ejemplo@gmail.com");
    ```
    
-## ¿Cómo Ejecutar el Proyecto?
+## Pasos para Ejecutar el proyecto.
+
 
 ### Requisitos
 
