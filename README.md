@@ -20,45 +20,47 @@ Esta clase contiene una colección de *métodos estáticos* que permiten validar
 
 ### Métodos principales:
 
-- **noEsNuloNiVacio(String texto)**  
-  Verifica que el texto no sea null ni esté vacío o contenga solo espacios.
-  - **esPositivo(int numero)**  
+- **`noEsNuloNiVacio(String texto)`**  
+  Verifica que el texto no sea `null` ni esté vacío o contenga solo espacios.
+
+- **`esPositivo(int numero)`**  
   Evalúa si el número es estrictamente mayor a cero.
 
-- **esCorreoValido(String correo)**  
-  Utiliza una expresión regular para validar correos electrónicos con el formato estándar usuario@dominio.com.
+- **`esCorreoValido(String correo)`**  
+  Utiliza una expresión regular para validar correos electrónicos con el formato estándar `usuario@dominio.com`.
 
-- **longitudMinima(String texto, int longitud)**  
+- **`longitudMinima(String texto, int longitud)`**  
   Comprueba que el texto tenga al menos una longitud mínima especificada.
 
-- **esTelefonoValido(String telefono)**  
+- **`esTelefonoValido(String telefono)`**  
   Valida que el número contenga exactamente 10 dígitos numéricos (formato nacional).
 
-- **esCurpValida(String curp)**  
+- **`esCurpValida(String curp)`**  
   Utiliza una expresión regular para validar que la CURP mexicana tenga el formato oficial (18 caracteres alfanuméricos, con letras mayúsculas y números).
 
-- **soloLetras(String texto)**  
-  Valida que el texto contenga exclusivamente letras (mayúsculas o minúsculas), incluyendo acentos y la letra ñ. También se permiten espacios.
-
+- **`soloLetras(String texto)`**  
+  Valida que el texto contenga exclusivamente letras (mayúsculas o minúsculas), incluyendo acentos y la letra `ñ`. También se permiten espacios.
+  
 ## 2. Clase VentanaCliente.java
 
-Ubicación: cliente/VentanaCliente.java
+Ubicación: clienteValidacion/VentanaCliente.java
 
 Esta clase representa una *interfaz gráfica construida con Java Swing*, que permite al usuario ingresar distintos campos y ver los resultados de la validación en pantalla.
 ### Campos incluidos:
 
-- Nombre: Valida que no esté vacío, que tenga longitud mínima y solo letras.
-- Edad: Valida que sea un número entero positivo.
-- Correo: Valida el formato básico de un correo electrónico.
-- Teléfono: Valida que tenga exactamente 10 dígitos.
-- CURP: Valida el formato oficial de una CURP mexicana.
-- Descripción personal: Valida que no esté vacía.
+- `Nombre`: Valida que no esté vacío, que tenga longitud mínima y solo letras.
+- `Edad`: Valida que sea un número entero positivo.
+- `Correo`: Valida el formato básico de un correo electrónico.
+- `Teléfono`: Valida que tenga exactamente 10 dígitos.
+- `CURP`: Valida el formato oficial de una CURP mexicana.
+- `Descripción personal`: Valida que no esté vacía.
+
 
 ### Lógica del botón "Validar"
 
 Cuando el usuario presiona el botón, se ejecutan las siguientes acciones:
 
-java
+```java
 // Obtiene los valores ingresados en los campos
 String texto = txtTexto.getText();
 String numStr = txtNumero.getText();
@@ -90,6 +92,7 @@ lblTelefono.setText("Teléfono: " + (Validador.esTelefonoValido(telefono) ? "VÁ
 lblCurp.setText("CURP: " + (Validador.esCurpValida(curp) ? "VÁLIDO" : "NO VÁLIDO"));
 // Valida descripción
 lblDescripcion.setText("Descripción: " + (Validador.noEsNuloNiVacio(descripcion) ? "VÁLIDO" : "NO VÁLIDO"));
+```
 ## Vista Previa de la Interfaz 
 ### Validación Exitosa
 <img width="610" height="907" alt="Captura de pantalla 2025-07-10 211927" src="https://github.com/user-attachments/assets/f725ac3f-9c8d-4068-8309-131586eadba0" />
@@ -101,12 +104,35 @@ lblDescripcion.setText("Descripción: " + (Validador.noEsNuloNiVacio(descripcion
 
 ## ¿Cómo importar el archivo .jar en otro proyecto?
 
-1. Compila la clase Validador.java en tu entorno.
-2. Genera el archivo .jar desde NetBeans o cualquier IDE Java:
-   - En NetBeans: clic derecho en el proyecto → "Clean and Build". El .jar se ubicará en la carpeta dist.
+1. Compila la clase `Validador.java` en tu entorno.
+2. Genera el archivo `.jar` desde NetBeans o cualquier IDE Java:
+   - En NetBeans: clic derecho en el proyecto → "Clean and Build". El `.jar` se ubicará en la carpeta `dist`.
 3. En el proyecto destino:
    - Clic derecho sobre "Libraries" → "Add JAR/Folder...".
-   - Selecciona el .jar generado.
+   - Selecciona el `.jar` generado.
+4. Importa la clase en tu código:
+   ```java
+   import validadores.Validador;
+   ```
+5. Ya puedes usar los métodos de validación directamente como:
+   ```java
+   boolean valido = Validador.esCorreoValido("ejemplo@gmail.com");
+   ```
+   
+## Cómo Ejecutar el Proyecto
+
+### Requisitos
+
+- Java JDK 8 o superior
+- NetBeans IDE (u otro entorno compatible con Swing)
+- Sistema operativo Windows, Linux o macOS
+
+### Pasos
+
+1. Clonar o descargar el proyecto.
+2. Abrirlo en NetBeans.
+3. Verificar que las clases `Validador.java` y `VentanaCliente.java` estén en los paquetes correctos.
+4. Ejecutar la clase `VentanaCliente` como aplicación Java.
 
 ## Aplicaciones Posibles
 
@@ -115,18 +141,14 @@ lblDescripcion.setText("Descripción: " + (Validador.noEsNuloNiVacio(descripcion
 - Validación en sistemas de salud, empleo o gobierno
 - Prevalidación de datos antes de enviarlos a una base de datos
 
-
-
 ## Licencia
 
 Este proyecto se proporciona con fines educativos. Puede ser adaptado, reutilizado o extendido en proyectos académicos o personales.
-
-
 
 ## Conclusión
 Este validador de datos es una herramienta práctica, modular y extensible que puede ser integrada fácilmente en otros proyectos Java. La combinación de una librería independiente de validaciones con una interfaz intuitiva lo hace útil para prototipos, demostraciones académicas y aplicaciones reales.
 ## Autores
 
-- *Melody Nathalie Mendoza Jiménez*  
+- *Melody Nathalie Mendoza Jiménez*  (https://github.com/Melody-Mendoza)
 
 - *Josué Saúl López Trujillo*
