@@ -119,7 +119,7 @@ lblDescripcion.setText("Descripción: " + (Validador.noEsNuloNiVacio(descripcion
    boolean valido = Validador.esCorreoValido("ejemplo@gmail.com");
    ```
    
-## Cómo Ejecutar el Proyecto
+## ¿Cómo Ejecutar el Proyecto?
 
 ### Requisitos
 
