@@ -152,7 +152,7 @@ Este proyecto se proporciona con fines educativos. Puede ser adaptado, reutiliza
 
 ## Conclusión
 Este validador de datos es una herramienta práctica, modular y extensible que puede ser integrada fácilmente en otros proyectos Java. La combinación de una librería independiente de validaciones con una interfaz intuitiva lo hace útil para prototipos, demostraciones académicas y aplicaciones reales.
-## Video
+## 🔗Video
 https://youtu.be/19gTovnpGj8
 ## Autores
 
