@@ -153,7 +153,10 @@ Este proyecto se proporciona con fines educativos. Puede ser adaptado, reutiliza
 ## Conclusión
 Este validador de datos es una herramienta práctica, modular y extensible que puede ser integrada fácilmente en otros proyectos Java. La combinación de una librería independiente de validaciones con una interfaz intuitiva lo hace útil para prototipos, demostraciones académicas y aplicaciones reales.
 ## 🔗Video
-https://youtu.be/19gTovnpGj8
+- Explicación paso a paso para importar una librería .jar en un nuevo proyecto Java.
+- Integración de la librería en un JFrame.
+- Ejemplo práctico del uso de la librería dentro de una interfaz gráfica.
+- https://youtu.be/19gTovnpGj8
 ## Autores
 
 - *Melody Nathalie Mendoza Jiménez*  (https://github.com/Melody-Mendoza)
