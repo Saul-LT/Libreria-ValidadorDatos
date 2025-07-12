@@ -2,12 +2,12 @@
 ## Equipo 11
 ### Descripción General
 
-Este proyecto implementa una herramienta de validación de datos desarrollada en *Java, compuesta por una **librería de validaciones reutilizable* (Validador.java) y una *interfaz gráfica* (VentanaCliente.java) construida con *Java Swing*. El sistema está diseñado para validar entradas comunes en formularios de usuario, como nombre, edad, correo electrónico, teléfono, CURP y descripciones personales.
+Este proyecto implementa una herramienta de validación de datos desarrollada en *Java*, compuesta por una *librería de validaciones reutilizable* `Validador.java` y una *interfaz gráfica* `VentanaCliente.java` construida con *Java Swing*. El sistema está diseñado para validar entradas comunes en formularios de usuario, como nombre, edad, correo electrónico, teléfono, CURP y descripciones personales.
 
 ## Objetivo
 
 Ofrecer una solución modular y reutilizable para validar campos comunes en formularios, que pueda integrarse fácilmente en otros proyectos Java y facilitar el desarrollo de interfaces seguras y consistentes.
-##Propósito de la Librería
+## Propósito de la Librería
 
 La librería Validador.java fue diseñada con el propósito de proporcionar una colección de validaciones comunes reutilizables para entradas de usuario, con el fin de facilitar el desarrollo de interfaces gráficas robustas y seguras. Se centra en la validación de textos, números, correos, teléfonos, CURP y cadenas alfabéticas.
 
