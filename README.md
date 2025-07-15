@@ -125,7 +125,7 @@ lblDescripcion.setText("Descripción: " + (Validador.noEsNuloNiVacio(descripcion
 ### Requisitos
 
 - Java JDK 8 o superior
-- NetBeans IDE (u otro entorno compatible con Swing)
+- NetBeans IDE 19 (u otro entorno compatible con Swing)
 - Sistema operativo Windows, Linux o macOS
 
 ### Pasos
